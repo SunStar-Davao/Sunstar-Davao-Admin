@@ -73,7 +73,7 @@ const getAllEmployees = async (req, res) => {
   try {
     const { data: employees, error } = await supabase
       .from('employees')
-      .select('employee_id, name, image_url, created_at, qr_code_in_url, qr_code_out_url')
+      .select('employee_id, name, image_url, created_at, qr_code_in_url, qr_code_out_url, department, role')
       .order('name');
 
     if (error) throw error;
