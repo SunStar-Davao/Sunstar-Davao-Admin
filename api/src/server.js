@@ -190,8 +190,7 @@ app.use((req, res, next) => {
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/attendance', attendanceRoutes);
 app.use('/api/v1/admin', adminRoutes);
-app.use('/api/v1/chats', chatRoutes);
-app.use('/api/v1/messages', messageRoutes);
+
 
 // Health check
 app.get('/health', (req, res) => {
