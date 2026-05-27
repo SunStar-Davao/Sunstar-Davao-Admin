@@ -146,8 +146,7 @@ require('dotenv').config();
 const authRoutes = require('./routes/auth.route');
 const attendanceRoutes = require('./routes/attendance.route');
 const adminRoutes = require('./routes/admin.route');
-const chatRoutes = require('./routes/chat.route');
-const messageRoutes = require('./routes/message.route');
+
 
 // Initialize express
 const app = express();
