@@ -298,3 +298,9 @@ app.use((err, req, res, next) => {
 
 // ✅ EXPORT the app for Vercel
 module.exports = app;
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
