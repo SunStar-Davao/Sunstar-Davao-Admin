@@ -230,18 +230,6 @@ app.get('/', (req, res) => {
         'attendance/report': 'GET /api/v1/admin/attendance/report',
         'dashboard/stats': 'GET /api/v1/admin/dashboard/stats'
       },
-      chats: {
-        list: 'GET /api/v1/chats',
-        unread: 'GET /api/v1/chats/unread-count',
-        messages: 'GET /api/v1/chats/:chatId/messages',
-        personal: 'POST /api/v1/chats/personal',
-        department: 'GET /api/v1/chats/department/:department',
-        initialize: 'POST /api/v1/chats/initialize'
-      },
-      messages: {
-        send: 'POST /api/v1/messages',
-        read: 'POST /api/v1/messages/read/:chatId'
-      },
       health: 'GET /health'
     }
   });
